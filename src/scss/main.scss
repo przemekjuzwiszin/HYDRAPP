@@ -63,3 +63,9 @@ body {
     font-weight: 500;
   }
 }
+
+.glass-actions {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
