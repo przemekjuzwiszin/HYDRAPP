@@ -68,4 +68,7 @@ body {
   display: flex;
   position: absolute;
   flex-direction: column;
+  &__add {
+    margin-bottom: 37px;
+  }
 }
