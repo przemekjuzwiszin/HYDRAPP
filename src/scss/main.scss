@@ -47,11 +47,13 @@ body {
     bottom: 6.25%;
   }
   &__number {
+    display: flex;
     position: absolute;
     left: 38.13%;
     right: 38.4%;
     top: 39.04%;
     bottom: 48.89%;
+    align-items: center;
     font-family: "roboto";
     font-size: 112px;
     font-weight: 500;
