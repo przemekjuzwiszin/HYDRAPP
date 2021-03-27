@@ -31,4 +31,13 @@ body {
   left: 47px;
   top: 203px;
   width: 280px;
+  &__image {
+    position: absolute;
+  }
+  &__water {
+    position: absolute;
+  }
+  &__number {
+    position: absolute;
+  }
 }
