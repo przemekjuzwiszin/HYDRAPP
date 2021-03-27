@@ -1,17 +1,18 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 .water {
