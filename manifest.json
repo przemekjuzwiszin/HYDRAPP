@@ -5,8 +5,8 @@
   "background_color": "#000000",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/przemekjuzwiszin.github.io/HYDRAPP/",
-  "start_url": "/przemekjuzwiszin.github.io/HYDRAPP/",
+  "scope": "/HYDRAPP/",
+  "start_url": "/HYDRAPP/",
   "icons": [
     {
       "src": "assets/pwa/icons/icon-72x72.png",
