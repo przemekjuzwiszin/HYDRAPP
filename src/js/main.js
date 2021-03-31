@@ -19,4 +19,5 @@ if ('serviceWorker' in navigator) {
 const numberOfGlass = document.querySelector(".glass__number--js");
 console.log(numberOfGlass);
 
-
+const addGlass = document.querySelector(".glass-actions__add--js");
+console.log(addGlass);
