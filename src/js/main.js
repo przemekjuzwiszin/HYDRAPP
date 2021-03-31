@@ -34,3 +34,7 @@ console.log(removeGlass);
 addGlass.addEventListener("click", (e) => {
   console.log(e);
 });
+
+removeGlass.addEventListener("click", (e) => {
+  console.log(e);
+});
