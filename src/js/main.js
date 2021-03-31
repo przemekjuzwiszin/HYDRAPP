@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
-
-console.log(`Hello world!`);
+const numberOfGlass = document.querySelector(".glass__number--js");
+console.log(numberOfGlass);
 
 
