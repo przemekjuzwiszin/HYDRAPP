@@ -30,3 +30,7 @@ console.log(addGlass);
 
 const removeGlass = document.querySelector(".glass-actions__remove--js");
 console.log(removeGlass);
+
+addGlass.addEventListener("click", (e) => {
+  console.log(e);
+});
