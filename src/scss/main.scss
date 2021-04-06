@@ -15,9 +15,12 @@ html {
 
 body {
   background: $blue;
+  color: #fff;
   display: flex;
   padding: 16px;
   align-items: center;
+  font-family: Roboto;
+  font-weight: 500;
   justify-content: center;
   min-height: 100vh;
 }
