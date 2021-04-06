@@ -25,6 +25,28 @@ body {
   min-height: 100vh;
 }
 
+.counter {
+  height: 280px;
+  width: 280px;
+  background: url(../assets/img/water-glass.svg) center center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 112px;
+  &__value {
+    display: block;
+    padding-top: 64px;
+  }
+}
+
+.heading {
+  font-size: 55px;
+  margin: 0 0 64px 0;
+  padding: 0;
+}
+
 .main {
   display: flex;
   align-items: center;
