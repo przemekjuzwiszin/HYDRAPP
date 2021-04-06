@@ -22,13 +22,13 @@ if ("serviceWorker" in navigator) {
 
 // place your code below
 
-const numberOfGlass = document.querySelector(".glass__number--js");
+const numberOfGlass = document.querySelector(".counter__value--js");
 console.log(numberOfGlass);
 
-const addGlass = document.querySelector(".glass-actions__add--js");
+const addGlass = document.querySelector(".glass-add--js");
 console.log(addGlass);
 
-const removeGlass = document.querySelector(".glass-actions__remove--js");
+const removeGlass = document.querySelector(".glass-remove--js");
 console.log(removeGlass);
 
 addGlass.addEventListener("click", (e) => {
