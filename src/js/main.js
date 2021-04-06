@@ -2,21 +2,40 @@
 
 // service worker registration - remove if you're not going to use it
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("serviceworker.js").then(
+      function (registration) {
+        // Registration was successful
+        console.log(
+          "ServiceWorker registration successful with scope: ",
+          registration.scope
+        );
+      },
+      function (err) {
+        // registration failed :(
+        console.log("ServiceWorker registration failed: ", err);
+      }
+    );
   });
 }
 
 // place your code below
 
+const numberOfGlass = document.querySelector(".counter__value--js");
+console.log(numberOfGlass);
 
-console.log(`Hello world!`);
+const addGlass = document.querySelector(".glass-add--js");
+console.log(addGlass);
 
+const removeGlass = document.querySelector(".glass-remove--js");
+console.log(removeGlass);
 
+addGlass.addEventListener("click", (e) => {
+  console.log(e);
+  numberOfGlass.innerHTML = parseInt(numberOfGlass.innerHTML) + 1;
+});
+
+removeGlass.addEventListener("click", (e) => {
+  console.log(e);
+});

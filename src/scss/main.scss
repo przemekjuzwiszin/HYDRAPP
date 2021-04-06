@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 html {
+  background: $blue;
   box-sizing: border-box;
 }
 
@@ -13,82 +14,62 @@ html {
 }
 
 body {
-  background: #e5e5e5;
-}
-
-.water {
-  background: #3767ad;
-  height: 812px;
-  margin: auto;
-  position: relative;
-  width: 375px;
-  margin-bottom: 16px;
-  margin-top: 16px;
-}
-
-.glass {
-  position: absolute;
-  height: 280px;
-  margin-bottom: 48px;
-  margin-left: 48px;
-  margin-right: 48px;
-  margin-top: 203px;
-  width: 280px;
-  &__image {
-    height: 280px;
-    position: absolute;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    top: 0%;
-    bottom: 0%;
-    width: 210px;
-  }
-  &__water {
-    height: 200px;
-    position: absolute;
-    left: 20.88%;
-    right: 21.62%;
-    top: 22.47%;
-    bottom: 6.25%;
-  }
-  &__number {
-    display: flex;
-    position: absolute;
-    left: 38.13%;
-    right: 38.4%;
-    top: 39.04%;
-    bottom: 48.89%;
-    align-items: center;
-    font-family: "roboto";
-    font-size: 112px;
-    font-weight: 500;
-  }
-}
-
-.glass-actions {
+  background: $blue;
+  color: #fff;
   display: flex;
-  position: absolute;
+  padding: 16px;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: 500;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.counter {
+  height: 280px;
+  width: 280px;
+  background: url(../assets/img/water-glass.svg) center center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 112px;
+  &__value {
+    display: block;
+    padding-top: 64px;
+  }
+}
+
+.heading {
+  font-size: 55px;
+  margin: 0 0 64px 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: "roboto";
-  margin: 531px 80px 174px 80px;
-  &__add {
-    background: #ffffff;
-    color: #000000;
-    height: 48px;
-    padding: 12px 32px;
-    width: 216px;
-    border-radius: 4px;
-    font-size: 18px;
-    margin-bottom: 38px;
-  }
-  &__remove {
-    color: #f5e5e7;
-    background: none;
-    border: none;
-    height: 24px;
-    width: 124px;
-    font-size: 14px;
-    margin-bottom: 174px;
-  }
+}
+
+.glass-add {
+  padding: 12px;
+  font-size: 18px;
+  color: #000;
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  min-width: 216px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 26px 0 46px;
+}
+
+.glass-remove {
+  background: none;
+  border: none;
+  color: #f5e5e7;
+  padding: 12px;
+  font-size: 14px;
+  min-width: 216px;
 }
