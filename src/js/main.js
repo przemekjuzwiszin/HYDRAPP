@@ -43,12 +43,13 @@ if (!localStorage.getItem(key)) {
 
 addGlass.addEventListener("click", (e) => {
   console.log(e);
-  numberOfGlass.innerHTML = parseInt(numberOfGlass.innerHTML) + 1;
+  localStorage.setItem(key, parseInt(localStorage.getItem(key)) + 1);
+  numberOfGlass.innerHTML = localStorage.getItem(key);
 });
 
 removeGlass.addEventListener("click", (e) => {
   console.log(e);
-  const currentValue = parseInt(numberOfGlass.innerHTML);
+  const currentValue = parseInt(localStorage.getItem(key));
   if (currentValue > 0) {
     numberOfGlass.innerHTML = currentValue - 1;
   }
