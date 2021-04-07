@@ -35,8 +35,8 @@ const key = new Date().toISOString().slice(0, 10);
 console.log(key);
 
 if (!localStorage.getItem(key)) {
-localStorage.setItem(key, 0);
-numberOfGlass.innerHTML = "0";
+  localStorage.setItem(key, 0);
+  numberOfGlass.innerHTML = "0";
 } else {
   numberOfGlass.innerHTML = localStorage.getItem(key);
 }
