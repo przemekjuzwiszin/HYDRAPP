@@ -38,5 +38,8 @@ addGlass.addEventListener("click", (e) => {
 
 removeGlass.addEventListener("click", (e) => {
   console.log(e);
-  numberOfGlass.innerHTML = parseInt(numberOfGlass.innerHTML) - 1;
+  const currentValue = parseInt(numberOfGlass.innerHTML);
+  if (currentValue > 0) {
+  numberOfGlass.innerHTML = currentValue - 1;
+  }
 });
