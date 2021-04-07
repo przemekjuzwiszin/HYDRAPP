@@ -51,6 +51,7 @@ removeGlass.addEventListener("click", (e) => {
   console.log(e);
   const currentValue = parseInt(localStorage.getItem(key));
   if (currentValue > 0) {
-    numberOfGlass.innerHTML = currentValue - 1;
+    localStorage.setItem(key, localStorage.getItem(key) - 1);
+    numberOfGlass.innerHTML = localStorage.getItem(key);
   }
 });
