@@ -34,6 +34,13 @@ console.log(removeGlass);
 const key = new Date().toISOString().slice(0, 10);
 console.log(key);
 
+if (!localStorage.getItem(key)) {
+localStorage.setItem(key, 0);
+numberOfGlass.innerHTML = "0";
+} else {
+  numberOfGlass.innerHTML = localStorage.getItem(key);
+}
+
 addGlass.addEventListener("click", (e) => {
   console.log(e);
   numberOfGlass.innerHTML = parseInt(numberOfGlass.innerHTML) + 1;
