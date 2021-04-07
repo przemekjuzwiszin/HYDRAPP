@@ -31,15 +31,27 @@ console.log(addGlass);
 const removeGlass = document.querySelector(".glass-remove--js");
 console.log(removeGlass);
 
+const key = new Date().toISOString().slice(0, 10);
+console.log(key);
+
+if (!localStorage.getItem(key)) {
+  localStorage.setItem(key, 0);
+  numberOfGlass.innerHTML = "0";
+} else {
+  numberOfGlass.innerHTML = localStorage.getItem(key);
+}
+
 addGlass.addEventListener("click", (e) => {
   console.log(e);
-  numberOfGlass.innerHTML = parseInt(numberOfGlass.innerHTML) + 1;
+  localStorage.setItem(key, parseInt(localStorage.getItem(key)) + 1);
+  numberOfGlass.innerHTML = localStorage.getItem(key);
 });
 
 removeGlass.addEventListener("click", (e) => {
   console.log(e);
-  const currentValue = parseInt(numberOfGlass.innerHTML);
+  const currentValue = parseInt(localStorage.getItem(key));
   if (currentValue > 0) {
-    numberOfGlass.innerHTML = currentValue - 1;
+    localStorage.setItem(key, localStorage.getItem(key) - 1);
+    numberOfGlass.innerHTML = localStorage.getItem(key);
   }
 });
