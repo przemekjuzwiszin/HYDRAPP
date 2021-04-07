@@ -31,6 +31,9 @@ console.log(addGlass);
 const removeGlass = document.querySelector(".glass-remove--js");
 console.log(removeGlass);
 
+const key = new Date().toISOString().slice(0, 10);
+console.log(key);
+
 addGlass.addEventListener("click", (e) => {
   console.log(e);
   numberOfGlass.innerHTML = parseInt(numberOfGlass.innerHTML) + 1;
