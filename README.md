@@ -1,14 +1,58 @@
-![hydrapp screenshot](src/assets/img/gitHub.png)
+![HYDRAPP screenshot](src/assets/img/gh.png)
 
-# HYDRAPP
+# HYDRAPP 📱
 
-Please visit website: [HydrApp](https://przemekjuzwiszin.github.io/HYDRAPP/)
+![HYDRAPP mobile screenshot](src/assets/img/gh_mobile.png)
 
-## PWA application from the WTF course: what is this frontend.
+## HYDRAPP: 
 
-You can add hydrapp to your home screen.
+PWA application. 
 
-### How to run the page local?
+Adds and removes drinking glasses of water.
+
+You can add HYDRAPP to your home screen.
+
+Please visit website: [HYDRAPP](https://przemekjuzwiszin.github.io/HYDRAPP/)
+
+### Tools and technologies I've used: 💼
+
+- Visual Studio Code
+- Git
+- Trello
+- Figma
+- Gulp
+- Markdown
+- BEM
+- PWA
+- CSS: flex
+- HTML
+- JavaScript
+
+### What I learned:
+
+- Writing semantic HTML
+- Building a responsive website
+- Using BEM for styling
+- Cutting the design
+- Adding --js modifier to add JavaScript code
+- Fill in the head addresses and descriptions to share 
+
+### I learned something about:
+
+- JS: Local storage
+- Using a date as a key in local storage
+- JS: DOM manipulations
+- Progressive Web Apps
+
+### Further development of the app:
+
+- Displaying the history of the glasses of water drunk
+- Hamburger menu
+- Adding a new page with the history of drunk glasses of water
+- CSS animation to make the water level rise and fall
+- After clicking on the water counter add a glass of water 
+
+#### How to run the page local?
 
 [wtf-gulp-starter](https://github.com/maciejkorsan/wtf-gulp-starter)
 
