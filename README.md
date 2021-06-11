@@ -28,7 +28,7 @@ Please visit website: [HYDRAPP](https://przemekjuzwiszin.github.io/HYDRAPP/)
 - HTML
 - JavaScript
 
-### What I learned:
+### What I learned: 💡
 
 - Writing semantic HTML
 - Building a responsive website
@@ -37,14 +37,14 @@ Please visit website: [HYDRAPP](https://przemekjuzwiszin.github.io/HYDRAPP/)
 - Adding --js modifier to add JavaScript code
 - Fill in the head addresses and descriptions to share 
 
-### I learned something about:
+### I learned something about: 🤔
 
 - JS: Local storage
 - Using a date as a key in local storage
 - JS: DOM manipulations
 - Progressive Web Apps
 
-### Further development of the app:
+### Further development of the app: 🧬
 
 - Displaying the history of the glasses of water drunk
 - Hamburger menu
